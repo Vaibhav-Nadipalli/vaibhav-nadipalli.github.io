@@ -23,7 +23,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 10px 20px; /* Adjusted padding for spacing */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -31,14 +31,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust padding for spacing */
 }
 
 .nav-title {
     font-size: 1.5em;
     color: #fff; /* White text */
     margin: 0; /* Reset margin */
-    padding: 10px 0; /* Add padding for spacing */
+    padding: 20px 0; /* Padding for spacing */
+    margin-right: 20px; /* Right margin */
 }
 
 .nav-links {
@@ -68,7 +68,7 @@ header {
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 100px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
+    margin: 120px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
