@@ -34,11 +34,11 @@ header {
 }
 
 .nav-title {
-    font-size: 1.5em;
-    color: #fff; /* White text */
+    font-size: 1.3em; /* Smaller font size */
+    color: #ccc; /* Slightly grey color */
     margin: 0; /* Reset margin */
     padding: 20px 0; /* Padding for spacing */
-    margin-right: 20px; /* Right margin */
+    margin-right: 50px; /* Increased margin for right spacing */
 }
 
 .nav-links {
@@ -68,7 +68,7 @@ header {
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 120px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
+    margin: 150px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
