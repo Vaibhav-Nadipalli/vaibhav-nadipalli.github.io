@@ -23,23 +23,22 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 20px 20px; /* Adjusted padding for spacing */
+    padding: 15px 0; /* Vertical padding */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 70px; 
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Horizontal padding */
 }
 
 .nav-title {
-    font-size: 1.3em; /* Smaller font size */
+    font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
-    padding: 10px 0; /* Padding for spacing */
-    margin-left: 50px; /* Adjusted margin for left spacing */
+    padding: 0; /* Reset padding */
 }
 
 .nav-links {
@@ -63,13 +62,14 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #0000FF; /* blue text on hover */
+    background-color: #f0f0f0; /* Light grey background on hover */
+    color: #000; /* Black text on hover */
 }
 
 /* Main content area */
 main {
-    max-width: 1000px;
-    margin: 150px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
+    max-width: 800px;
+    margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
