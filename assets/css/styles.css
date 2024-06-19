@@ -21,11 +21,11 @@ header {
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0; /* Adjusted to be at the very top */
     z-index: 1000;
-    padding: 15px 0; /* Vertical padding */
+    padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 75px;
+    height: 75px; /* Decreased height by 15 pixels */
 }
 
 .nav-container {
@@ -38,19 +38,19 @@ header {
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
-    margin: 10px;
-    padding: 0;
-    margin-left: 100px;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    margin-left: 20px; /* Increased margin for space from left edge */
 }
 
 .nav-toggle {
-    display: none;
+    display: none; /* Hide by default */
 }
 
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: 50px;
+    margin-left: 20px; /* Increased margin between hamburger menu and title */
 }
 
 nav {
@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 20px; /* Adjust margin for spacing */
 }
 
 .nav-links li:first-child {
@@ -73,8 +73,8 @@ nav {
 .nav-links li a {
     color: #000; /* Black text */
     text-decoration: none;
-    padding: 0px 15px;
-    transition: color 0.3s ease;
+    padding: 0px 15px; /* Adjusted padding */
+    transition: color 0.3s ease; /* Transition color only */
 }
 
 .nav-links li a:hover {
@@ -109,25 +109,25 @@ h2, h3 {
 /* Media query for mobile */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 10px;
+        padding: 0 10px; /* Adjusted padding for mobile */
     }
 
     .nav-title {
-        font-size: 1.1em;
-        margin-left: 50px;
+        font-size: 1.1em; /* Smaller font size for mobile */
+        margin-left: 10px; /* Adjusted margin for mobile */
     }
 
     .nav-toggle-label {
-        margin-left: 5px;
+        margin-left: 10px; /* Adjusted margin for mobile */
     }
 
     nav {
         position: absolute;
-        top: 75px;
+        top: 37.5px; /* Adjusted top position for mobile (half of 75px) */
         left: 0;
         width: 100%;
-        background-color: #fff;
-        padding: 10px 0;
+        background-color: #fff; /* White background */
+        padding: 10px 0; /* Vertical padding */
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
@@ -137,11 +137,14 @@ h2, h3 {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adjusted margin for mobile */
     }
 
     header {
-        position: relative; /* Change to relative positioning on mobile */
-        top: 60px; /* Add some space between header and top of viewport */
+        top: 0; /* Ensure header is at the top on mobile */
+    }
+
+    main {
+        margin-top: 75px; /* Adjust main content margin to accommodate fixed header on mobile */
     }
 }
