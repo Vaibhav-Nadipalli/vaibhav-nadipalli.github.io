@@ -1,27 +1,31 @@
-/* Reset default margin and padding */
-* {
+nav {
+    position: fixed; /* Keeps the navigation bar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center;
 }
 
-/* Style for the navigation bar */
-.navbar {
-    overflow: hidden; /* Clear floats */
-    background-color: #333; /* Dark background color */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Style for each link (anchor tag) */
-.navbar a {
-    float: right; /* Float links to display horizontally */
-    display: block; /* Display links as block elements */
-    color: black; /* Text color */
-    text-align: center; /* Center-align text */
-    padding: 14px 20px; /* Padding inside each link */
-    text-decoration: none; /* Remove underline from links */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-/* Change link color on hover */
-.navbar a:hover {
-    background-color: #555; /* Darker background color on hover */
+nav ul li a:hover {
+    background-color: #555;
 }
