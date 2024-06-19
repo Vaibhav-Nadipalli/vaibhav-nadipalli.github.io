@@ -40,7 +40,7 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    margin-left: 70px; /* Increased margin for space from left edge */
+    margin-left: 1000px; /* Increased margin for space from left edge */
 }
 
 .nav-toggle {
