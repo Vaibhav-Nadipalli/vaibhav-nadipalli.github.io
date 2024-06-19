@@ -110,6 +110,13 @@ header {
     margin: 10px 0;
 }
 
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
 /* Main content area */
 main {
     max-width: 800px;
@@ -120,31 +127,4 @@ main {
 }
 
 section {
-    padding: 20px 0;
-    margin: 20px 0;
-}
-
-.section-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-/* Media query for mobile */
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 10px;
-    }
-
-    .nav-title {
-        font-size: 1.1em;
-        margin-left: 10px;
-    }
-
-    .nav-toggle-label {
-        margin-left: 10px;
-    }
-
-    .nav-menu {
-        display: none;
-    }
+    padding:
