@@ -23,32 +23,24 @@ header {
     width: 100%;
     top: 0; /* Adjusted to be at the very top */
     z-index: 1000;
-    padding: 15px 20px; /* Vertical padding with some horizontal padding */
+    padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: 75px; /* Decreased height by 15 pixels */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 0 20px; /* Horizontal padding */
 }
 
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
-    margin: 0; /* Reset margin */
+    margin: 5px 0; /* Reset margin */
     padding: 0; /* Reset padding */
     margin-left: 20px; /* Increased margin for space from left edge */
-}
-
-.nav-title a {
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit color from parent */
 }
 
 .nav-toggle {
@@ -58,23 +50,17 @@ header {
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-right: 20px; /* Increased margin between hamburger menu and right edge */
+    margin-left: 20px; /* Increased margin between hamburger menu and title */
+    margin-top: 5px; /* Adjusted margin to move toggle up */
 }
 
 nav {
-    position: absolute;
-    top: 75px; /* Adjusted top position to start below the header */
-    right: 0; /* Align navigation to the right */
-    background-color: #fff; /* White background */
-    padding: 10px 0; /* Vertical padding */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     display: none;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    flex-direction: row; /* Horizontal layout by default */
 }
 
 .nav-links li {
@@ -87,8 +73,8 @@ nav {
 
 .nav-links li a {
     color: #000; /* Black text */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Adjusted padding */
+    text-decoration: none;
+    padding: 0px 15px; /* Adjusted padding */
     transition: color 0.3s ease; /* Transition color only */
 }
 
@@ -104,9 +90,8 @@ nav {
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 90px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 75px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
-    background-color: #282c3f; /* Dark navy background */
     color: #fff;
 }
 
@@ -121,47 +106,19 @@ h2, h3 {
     color: #fff; /* White text */
 }
 
-/* Media query for mobile */
-@media (max-width: 768px) {
-    .nav-title {
-        font-size: 1.1em; /* Smaller font size for mobile */
-        margin-left: 10px; /* Adjusted margin for mobile */
-    }
+/* Section-specific background colors */
+#bio {
+    background-color: #282c3f; /* Dark navy */
+}
 
-    .nav-toggle-label {
-        margin-right: 10px; /* Adjusted margin for mobile */
-    }
+#portfolio {
+    background-color: #323a4e; /* Light navy */
+}
 
-    nav {
-        top: 60px; /* Adjusted top position for mobile */
-        right: 0; /* Align navigation to the right */
-        width: 200px; /* Example width for mobile navigation */
-    }
+#blog {
+    background-color: #282c3f; /* Dark navy */
+}
 
-    .nav-links {
-        flex-direction: column; /* Vertical layout for mobile */
-        align-items: flex-end; /* Right align on mobile */
-    }
-
-    .nav-links li {
-        margin: 10px 0; /* Adjusted margin for mobile */
-    }
-
-    header {
-        flex-direction: row-reverse; /* Reverse direction on mobile to keep toggle on right */
-        justify-content: flex-end; /* Align items to end on mobile */
-    }
-
-    main {
-        margin-top: 60px; /* Adjusted main content margin to accommodate fixed header on mobile */
-    }
-
-    section {
-        padding: 10px 0; /* Adjusted padding for sections on mobile */
-    }
-
-    h2, h3 {
-        font-size: 1.5em; /* Adjusted font size for headings on mobile */
-        text-align: center; /* Center align headings on mobile */
-    }
+#contact {
+    background-color: #323a4e; /* Light navy */
 }
