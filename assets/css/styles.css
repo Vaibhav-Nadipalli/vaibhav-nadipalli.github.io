@@ -23,9 +23,9 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 20px 0; /* Vertical padding */
+    padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 105px; /* Increased height by 20 pixels */
+    height: 90px; /* Decreased height by 15 pixels */
 }
 
 .nav-container {
@@ -40,6 +40,7 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
+    margin-left: 70px; /* Increased margin for space from left edge */
 }
 
 .nav-toggle {
@@ -49,6 +50,7 @@ header {
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
+    margin-left: 10px; /* Increased margin between hamburger menu and title */
 }
 
 nav {
@@ -72,12 +74,11 @@ nav {
     color: #000; /* Black text */
     text-decoration: none;
     padding: 10px 15px; /* Adjusted padding */
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease; /* Transition color only */
 }
 
 .nav-links li a:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-    color: #000; /* Black text on hover */
+    color: #007bff; /* Blue text on hover */
 }
 
 /* Show nav links when checkbox is checked */
@@ -88,7 +89,7 @@ nav {
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 125px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 105px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
@@ -113,19 +114,16 @@ h2, h3 {
 
     .nav-title {
         font-size: 1.1em; /* Smaller font size for mobile */
-    }
-
-    .nav-toggle {
-        display: none; /* Hide checkbox toggle initially */
+        margin-left: 50px; /* Increased margin for mobile */
     }
 
     .nav-toggle-label {
-        display: block; /* Display hamburger menu label */
+        margin-left: 5px; /* Adjusted margin for mobile */
     }
 
     nav {
         position: absolute;
-        top: 100%; /* Position dropdown below header */
+        top: 90px; /* Adjusted top position for mobile */
         left: 0;
         width: 100%;
         background-color: #fff; /* White background */
