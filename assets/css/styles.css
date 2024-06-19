@@ -1,31 +1,31 @@
-/* Reset default styles */
-* {
+/* Reset default browser styles */
+body, nav, ul, li {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  list-style: none;
 }
 
-/* Style for the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  text-align: right; /* Align text to the right */
+nav {
+  background-color: #333; /* Dark background color */
 }
 
-.topnav a {
-  color: #f2f2f2;
-  display: inline-block; /* Display links in a row */
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+nav ul {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  padding: 10px 0; /* Padding inside the navigation bar */
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+nav ul li {
+  margin: 0 10px; /* Margin between list items */
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+nav ul li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding inside each link */
+  display: inline-block; /* Make links behave like blocks */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Darker background on hover */
 }
