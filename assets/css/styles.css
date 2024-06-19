@@ -21,11 +21,11 @@ header {
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
-    top: 0.5;
+    top: 0;
     z-index: 1000;
-    padding: 15px 0; /* Vertical padding decreased by 15 pixels */
+    padding: 15px 0; /* Vertical padding */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 75px; /* Decreased height by 15 pixels */
+    height: 75px;
 }
 
 .nav-container {
@@ -38,19 +38,19 @@ header {
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
-    margin: 10; /* Reset margin */
-    padding: 0; /* Reset padding */
-    margin-left: 100px; /* Increased margin for space from left edge */
+    margin: 10px;
+    padding: 0;
+    margin-left: 100px;
 }
 
 .nav-toggle {
-    display: none; /* Hide by default */
+    display: none;
 }
 
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: 50px; /* Increased margin between hamburger menu and title */
+    margin-left: 50px;
 }
 
 nav {
@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 20px; /* Adjust margin for spacing */
+    margin-left: 20px;
 }
 
 .nav-links li:first-child {
@@ -73,8 +73,8 @@ nav {
 .nav-links li a {
     color: #000; /* Black text */
     text-decoration: none;
-    padding: 0px 15px; /* Adjusted padding */
-    transition: color 0.3s ease; /* Transition color only */
+    padding: 0px 15px;
+    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
@@ -89,7 +89,7 @@ nav {
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 105px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 90px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
@@ -109,25 +109,25 @@ h2, h3 {
 /* Media query for mobile */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 10px; /* Adjusted padding for mobile */
+        padding: 0 10px;
     }
 
     .nav-title {
-        font-size: 1.1em; /* Smaller font size for mobile */
-        margin-left: 50px; /* Increased margin for mobile */
+        font-size: 1.1em;
+        margin-left: 50px;
     }
 
     .nav-toggle-label {
-        margin-left: 5px; /* Adjusted margin for mobile */
+        margin-left: 5px;
     }
 
     nav {
         position: absolute;
-        top: 90px; /* Adjusted top position for mobile */
+        top: 75px;
         left: 0;
         width: 100%;
-        background-color: #fff; /* White background */
-        padding: 10px 0; /* Vertical padding */
+        background-color: #fff;
+        padding: 10px 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
@@ -137,6 +137,11 @@ h2, h3 {
     }
 
     .nav-links li {
-        margin: 10px 0; /* Adjusted margin for mobile */
+        margin: 10px 0;
+    }
+
+    header {
+        position: relative; /* Change to relative positioning on mobile */
+        top: 60px; /* Add some space between header and top of viewport */
     }
 }
