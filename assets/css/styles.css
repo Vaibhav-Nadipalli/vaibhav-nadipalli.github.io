@@ -30,9 +30,8 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center items horizontally */
     align-items: center;
-    padding: 0 50px; /* Increased padding for spacing */
 }
 
 .nav-title {
@@ -40,7 +39,6 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    margin-left: 50px; /* Adjusted margin for left spacing */
 }
 
 .nav-links {
