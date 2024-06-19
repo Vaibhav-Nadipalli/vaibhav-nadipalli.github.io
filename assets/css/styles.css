@@ -25,7 +25,7 @@ header {
     z-index: 1000;
     padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 90px; /* Decreased height by 15 pixels */
+    height: 70px; /* Decreased height by 15 pixels */
 }
 
 .nav-container {
@@ -40,7 +40,7 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    margin-left: 1000px; /* Increased margin for space from left edge */
+    margin-left: 450px; /* Increased margin for space from left edge */
 }
 
 .nav-toggle {
