@@ -18,13 +18,14 @@ body {
 /* Navigation bar styling */
 header {
     background-color: #fff; /* White background */
-    color: #333; /* Dark grey text */
+    color: #000; /* Black text */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 8px 20px; /* Adjusted padding for spacing */
+    padding: 20px 20px; /* Adjusted padding for spacing */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: 75px; /* 2.5 times the size of typical search bar */
 }
 
 .nav-container {
@@ -35,10 +36,10 @@ header {
 
 .nav-title {
     font-size: 1.3em; /* Smaller font size */
-    color: #333; /* Dark grey color */
+    color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 10px 0; /* Padding for spacing */
-    margin-right: 200px; /* Increased margin for right spacing */
+    margin-left: 20px; /* Adjusted margin for left spacing */
 }
 
 .nav-links {
@@ -55,21 +56,21 @@ header {
 }
 
 .nav-links li a {
-    color: #333; /* Dark grey text */
+    color: #000; /* Black text */
     text-decoration: none;
-    padding: 8px 15px; /* Adjusted padding */
+    padding: 10px 15px; /* Adjusted padding */
     transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover {
     background-color: #f0f0f0; /* Light grey background on hover */
-    color: #333; /* Dark grey text on hover */
+    color: #000; /* Black text on hover */
 }
 
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 100px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
+    margin: 150px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
