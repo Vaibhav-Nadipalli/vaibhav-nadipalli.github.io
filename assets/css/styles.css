@@ -25,14 +25,10 @@ header {
     z-index: 1000;
     padding: 20px 0; /* Vertical padding */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 105px; /* Increased height by 20 pixels */
-}
-
-.nav-container {
+    height: 85px; /* Initial height */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Horizontal padding */
 }
 
 .nav-title {
@@ -43,7 +39,7 @@ header {
 }
 
 .nav-toggle {
-    display: none; /* Hide by default */
+    display: none; /* Hide checkbox toggle by default */
 }
 
 .nav-toggle-label {
@@ -51,37 +47,33 @@ header {
     cursor: pointer;
 }
 
-nav {
-    display: none;
-}
-
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+nav ul li {
     margin-left: 20px; /* Adjust margin for spacing */
 }
 
-.nav-links li:first-child {
+nav ul li:first-child {
     margin-left: 0;
 }
 
-.nav-links li a {
+nav ul li a {
     color: #000; /* Black text */
     text-decoration: none;
     padding: 10px 15px; /* Adjusted padding */
     transition: background-color 0.3s ease;
 }
 
-.nav-links li a:hover {
+nav ul li a:hover {
     background-color: #f0f0f0; /* Light grey background on hover */
     color: #000; /* Black text on hover */
 }
 
 /* Show nav links when checkbox is checked */
-.nav-toggle:checked + nav {
+.nav-toggle:checked + .nav-links {
     display: block;
 }
 
@@ -116,14 +108,13 @@ h2, h3 {
     }
 
     .nav-toggle {
-        display: none; /* Hide checkbox toggle initially */
+        display: block; /* Show checkbox toggle for mobile */
+        order: 3; /* Order to appear after nav-title and before nav-links */
     }
 
-    .nav-toggle-label {
-        display: block; /* Display hamburger menu label */
-    }
-
-    nav {
+    nav ul {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
         position: absolute;
         top: 100%; /* Position dropdown below header */
         left: 0;
@@ -134,11 +125,14 @@ h2, h3 {
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: center;
+        order: 2; /* Order to appear after nav-title and before nav-toggle */
     }
 
     .nav-links li {
         margin: 10px 0; /* Adjusted margin for mobile */
+    }
+
+    .nav-toggle:checked + nav ul {
+        display: flex; /* Show nav links when checkbox is checked */
     }
 }
