@@ -21,7 +21,7 @@ header {
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 10;
     z-index: 1000;
     padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -73,7 +73,7 @@ nav {
 .nav-links li a {
     color: #000; /* Black text */
     text-decoration: none;
-    padding: 10px 15px; /* Adjusted padding */
+    padding: 0px 15px; /* Adjusted padding */
     transition: color 0.3s ease; /* Transition color only */
 }
 
