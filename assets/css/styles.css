@@ -7,24 +7,20 @@
 
 /* Style for the navigation bar */
 .navbar {
+    overflow: hidden;
     background-color: #333; /* Dark background color */
 }
 
-.navbar .container {
-    max-width: 1200px; /* Adjust container width as needed */
-    margin: 0 auto; /* Center-align the container */
-    padding: 10px 20px; /* Padding inside container */
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-}
-
 .navbar a {
+    float: left;
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 20px; /* Padding inside each link */
     text-decoration: none;
-    padding: 10px 15px; /* Adjust padding as needed */
-    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .navbar a:hover {
-    background-color: #555; /* Darker background color on hover */
+    background-color: #ddd; /* Lighter background color on hover */
+    color: black; /* Change text color on hover */
 }
