@@ -5,23 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Basic body and header styling */
+/* Basic body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
 }
 
 /* Navigation bar styling */
 header {
     background-color: #333;
-    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    padding: 10px 0;
 }
 
 .nav-container {
@@ -31,8 +29,13 @@ header {
     padding: 0 20px;
 }
 
+.nav-title {
+    color: #fff;
+    font-size: 1.5em;
+}
+
 .nav-links {
-    list-style-type: none;
+    list-style: none;
     display: flex;
 }
 
@@ -49,11 +52,6 @@ header {
 
 .nav-links li a:hover {
     background-color: #555;
-}
-
-.nav-title {
-    color: #fff;
-    margin-left: auto;
 }
 
 /* Main content area */
