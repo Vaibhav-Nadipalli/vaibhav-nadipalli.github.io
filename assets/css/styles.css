@@ -59,7 +59,7 @@ header {
 }
 
 .nav-links li a:hover {
-    background-color: #ddd;
+    background-color: #000;
 }
 
 /* Main content area */
@@ -80,11 +80,11 @@ section {
 h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
 }
 
 h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
 }
