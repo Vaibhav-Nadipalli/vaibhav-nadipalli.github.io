@@ -17,8 +17,8 @@ body {
 
 /* Navigation bar styling */
 header {
-    background-color: #1e2141; /* Darker navy background */
-    color: #fff;
+    background-color: #fff; /* White background */
+    color: #000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,10 +35,10 @@ header {
 
 .nav-title {
     font-size: 1.3em; /* Smaller font size */
-    color: #ccc; /* Slightly grey color */
+    color: #333; /* Dark grey color */
     margin: 0; /* Reset margin */
     padding: 20px 0; /* Padding for spacing */
-    margin-right: 50px; /* Increased margin for right spacing */
+    margin-right: 200px; /* Increased margin for right spacing */
 }
 
 .nav-links {
@@ -55,14 +55,15 @@ header {
 }
 
 .nav-links li a {
-    color: #fff; /* White text */
+    color: #000; /* Black text */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: #1e2141; /* Darker navy background on hover */
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Main content area */
