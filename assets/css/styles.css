@@ -26,8 +26,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* Display items next to each other */
-    margin-right: 10px; /* Adjust spacing between items */
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav ul li a {
