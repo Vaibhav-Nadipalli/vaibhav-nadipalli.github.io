@@ -40,7 +40,7 @@ header {
     color: #000;
     margin: 5px 0;
     padding: 0;
-    margin-left: 120px; /* Moved right by 100 pixels */
+    margin-left: 20px;
 }
 
 .nav-title a {
@@ -53,7 +53,7 @@ header {
 }
 
 .nav-toggle-label {
-    font-size: 1.8em; /* Increased by 3 pixels */
+    font-size: 1.8em; /* Increased size by 3 pixels */
     cursor: pointer;
     margin-left: auto;
     margin-top: 5px;
@@ -89,7 +89,7 @@ header {
 }
 
 /* Show nav links when checkbox is checked */
-.nav-toggle:checked + .nav-menu {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
     top: 75px;
@@ -101,13 +101,20 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.nav-menu .nav-links {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links {
     flex-direction: column;
     width: 100%;
 }
 
-.nav-menu .nav-links li {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links li {
     margin: 10px 0;
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+    .nav-toggle-label {
+        display: none;
+    }
 }
 
 /* Main content area */
@@ -138,52 +145,43 @@ section {
 
     .nav-title {
         font-size: 1.1em;
-        margin-left: 20px; /* Adjusted margin for mobile */
+        margin-left: 10px;
     }
 
     .nav-toggle-label {
-        margin-right: 10px; /* Adjusted margin for mobile */
-    }
-
-    .nav-toggle {
-        display: block; /* Show the toggle button on mobile */
+        margin-left: 10px;
     }
 
     .nav-menu {
-        display: none; /* Hide menu by default on mobile */
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        width: 100%;
+        display: none;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex;
         position: absolute;
         top: 75px;
         left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    .nav-menu .nav-links {
+    .nav-links {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
     }
 
-    .nav-menu .nav-links li {
+    .nav-links li {
         margin: 10px 0;
     }
 
-    .nav-toggle:checked + .nav-menu {
-        display: flex; /* Show the menu when toggle is checked */
+    header {
+        top: 0;
     }
 
     main {
-        margin-top: 75px; /* Adjust main content margin to accommodate fixed header on mobile */
+        margin-top: 75px;
     }
-}
-
-/* Alternating section background colors */
-section:nth-child(odd) {
-    background-color: #1a1e33; /* Darker navy */
-}
-
-section:nth-child(even) {
-    background-color: #20243a; /* Slightly lighter navy */
 }
