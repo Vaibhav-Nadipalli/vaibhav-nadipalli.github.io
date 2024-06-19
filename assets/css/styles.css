@@ -1,51 +1,42 @@
-/* Reset default margin and padding */
-* {
+/* Basic reset and styles */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: #000; /* Black font color */
-    padding: 10px 0;
-}
-
-.container {
+/* Header styles */
+.main-header {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
-.brand a {
-    font-size: 1.2rem; /* Adjusted font size */
-    color: #000; /* Black font color */
-    text-decoration: none;
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Black color */
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #000; /* Black font color */
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #000; /* Black color */
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Blue color on hover */
+    text-decoration: underline;
 }
