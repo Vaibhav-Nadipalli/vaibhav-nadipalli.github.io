@@ -94,9 +94,12 @@ main {
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align content to the right */
 }
 
 section {
+    width: 100%; /* Full width */
     padding: 20px 0;
     margin: 20px 0;
 }
@@ -105,6 +108,7 @@ h2, h3 {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fff; /* White text */
+    align-self: flex-start; /* Align headings to the left */
 }
 
 /* Media query for mobile */
@@ -147,5 +151,15 @@ h2, h3 {
 
     main {
         margin-top: 75px; /* Adjust main content margin to accommodate fixed header on mobile */
+        justify-content: flex-start; /* Align content to the left on mobile */
+    }
+
+    section {
+        padding: 10px 0; /* Adjusted padding for sections on mobile */
+    }
+
+    h2, h3 {
+        font-size: 1.5em; /* Adjusted font size for headings on mobile */
+        text-align: center; /* Center align headings on mobile */
     }
 }
