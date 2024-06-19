@@ -11,52 +11,35 @@
         <div class="nav-container">
             <h3 class="nav-title"><a href="/" style="text-decoration:none; color:#000;">Vaibhav Nadipalli</a></h3> <!-- Link to refresh the page -->
             <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!-- Checkbox for navigation toggle -->
-            <nav>
+            <label for="nav-toggle" class="nav-toggle-label">&#9776;</label> <!-- Label for toggle icon -->
+            <nav class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#bio">Biography</a></li> <!-- Anchor links to sections -->
+                    <li><a href="#bio">Biography</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <label for="nav-toggle" class="nav-toggle-label">&#9776;</label> <!-- Label for toggle icon -->
         </div>
     </header>
 
     <main>
-        <section id="bio"> <!-- Section for Biography -->
-            <h2>Biography</h2>
-            <p>I'm a high school student obsessed with technology, self-improvement and business. Here I plan to record my products and the occasional blog.</p>
+        <section id="bio">
+            <h2 class="section-title">Biography</h2>
+            <p>I'm a high school student obsessed with technology, self-improvement, and business. Here I plan to record my products and the occasional blog.</p>
         </section>
-
-        <section id="portfolio"> <!-- Section for Portfolio -->
-            <h2>Portfolio</h2>
-            <p>Here you can find my latest projects and creations.</p>
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <p>Details about the portfolio will go here.</p>
         </section>
-
-        <section id="blog"> <!-- Section for Blog -->
-            <h2>Blog</h2>
-            <p>Read my thoughts and insights on various topics.</p>
+        <section id="blog">
+            <h2 class="section-title">Blog</h2>
+            <p>Details about the blog will go here.</p>
         </section>
-
-        <section id="contact"> <!-- Section for Contact -->
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Details about the contact will go here.</p>
         </section>
     </main>
-
-    <script>
-        // JavaScript to handle smooth scrolling when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
