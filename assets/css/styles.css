@@ -43,11 +43,6 @@ header {
     margin-left: 20px; /* Increased margin for space from left edge */
 }
 
-.nav-title a {
-    text-decoration: none;
-    color: #000; /* Black color */
-}
-
 .nav-toggle {
     display: none; /* Hide by default */
 }
@@ -55,12 +50,13 @@ header {
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: 20px; /* Increased margin between hamburger menu and title */
+    margin-left: auto; /* Align to the right */
     margin-top: 5px; /* Adjusted margin to move toggle up */
 }
 
-nav {
-    display: none;
+.nav-menu {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
@@ -88,15 +84,33 @@ nav {
 }
 
 /* Show nav links when checkbox is checked */
-.nav-toggle:checked + nav {
-    display: block;
+.nav-toggle:checked + .nav-menu {
+    display: flex;
+    position: absolute;
+    top: 75px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-toggle:checked + .nav-menu .nav-links {
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-toggle:checked + .nav-menu .nav-links li {
+    margin: 10px 0;
 }
 
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 75px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 90px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
+    background-color: #282c3f; /* Dark navy background */
     color: #fff;
 }
 
@@ -105,25 +119,51 @@ section {
     margin: 20px 0;
 }
 
-h2, h3 {
+.section-title {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #808080; /* Modern grey text */
+    color: #fff; /* White text */
 }
 
-/* Section-specific background colors */
-#bio {
-    background-color: #282c3f; /* Dark navy */
-}
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 10px; /* Adjusted padding for mobile */
+    }
 
-#portfolio {
-    background-color: #323a4e; /* Light navy */
-}
+    .nav-title {
+        font-size: 1.1em; /* Smaller font size for mobile */
+        margin-left: 10px; /* Adjusted margin for mobile */
+    }
 
-#blog {
-    background-color: #282c3f; /* Dark navy */
-}
+    .nav-toggle-label {
+        margin-left: 10px; /* Adjusted margin for mobile */
+    }
 
-#contact {
-    background-color: #323a4e; /* Light navy */
+    nav {
+        position: absolute;
+        top: 75px; /* Adjusted top position for mobile (same as header height) */
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* White background */
+        padding: 10px 0; /* Vertical padding */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjusted margin for mobile */
+    }
+
+    header {
+        top: 0; /* Ensure header is at the top on mobile */
+    }
+
+    main {
+        margin-top: 75px; /* Adjust main content margin to accommodate fixed header on mobile */
+    }
 }
