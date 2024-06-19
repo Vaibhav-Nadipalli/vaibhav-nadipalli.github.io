@@ -57,6 +57,7 @@ header {
     cursor: pointer;
     margin-left: auto;
     margin-top: 5px;
+    display: none; /* Hide by default */
 }
 
 .nav-menu {
@@ -88,26 +89,36 @@ header {
     color: #007bff;
 }
 
-/* Show nav links when checkbox is checked */
-.nav-toggle:checked ~ .nav-menu {
-    display: flex;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block; /* Show hamburger menu on mobile */
+    }
 
-.nav-toggle:checked ~ .nav-menu .nav-links {
-    flex-direction: column;
-    width: 100%;
-}
+    .nav-menu {
+        display: none; /* Hide menu on mobile by default */
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
 
-.nav-toggle:checked ~ .nav-menu .nav-links li {
-    margin: 10px 0;
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
 
 /* Main content area */
@@ -128,43 +139,4 @@ section {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fff;
-}
-
-/* Media query for mobile */
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 10px;
-    }
-
-    .nav-title {
-        font-size: 1.1em;
-        margin-left: 10px;
-    }
-
-    .nav-toggle-label {
-        margin-left: 10px;
-    }
-
-    .nav-toggle:checked ~ .nav-menu {
-        top: 75px;
-        left: 0;
-        width: 100%;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    header {
-        top: 0;
-    }
-
-    main {
-        margin-top: 75px;
-    }
 }
