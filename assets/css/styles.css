@@ -1,11 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Match Kevin Zhou's background color */
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #343a40; /* Match Kevin Zhou's header background color */
+  color: #ffffff; /* Match Kevin Zhou's header text color */
   padding: 1rem 0;
 }
 
@@ -20,9 +21,9 @@ header {
 
 .site-name h1 {
   margin: 0;
-  font-size: 1.5rem;
-  /* Adjusting position to the left */
-  margin-right: auto; /* Pushes other elements to the right */
+  font-size: 1.5rem; /* Adjust font size to match */
+  font-weight: normal; /* Adjust font weight as needed */
+  color: inherit; /* Inherit parent color */
 }
 
 nav ul {
@@ -33,12 +34,14 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 1rem; /* Adjust spacing between navigation items */
+  margin-left: 1rem;
 }
 
 nav ul li a {
-  color: white;
+  color: #ffffff; /* Match Kevin Zhou's navigation text color */
   text-decoration: none;
+  font-size: 1rem; /* Adjust font size to match */
+  font-weight: normal; /* Adjust font weight as needed */
 }
 
 nav ul li a:hover {
