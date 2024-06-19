@@ -88,40 +88,26 @@ header {
     color: #007bff;
 }
 
-/* Desktop behavior */
+/* Show nav links when checkbox is checked */
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Mobile behavior */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: #fff;
-        position: absolute;
-        top: 75px;
-        left: 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links {
+    flex-direction: column;
+    width: 100%;
+}
 
-    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
-        display: flex;
-    }
-
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    main {
-        margin-top: 75px;
-    }
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links li {
+    margin: 10px 0;
 }
 
 /* Main content area */
@@ -142,4 +128,53 @@ section {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fff;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .nav-title {
+        font-size: 1.1em;
+        margin-left: 10px;
+    }
+
+    .nav-toggle-label {
+        margin-left: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    header {
+        top: 0;
+    }
+
+    main {
+        margin-top: 75px;
+    }
 }
