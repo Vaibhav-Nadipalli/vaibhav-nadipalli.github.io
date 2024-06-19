@@ -25,7 +25,7 @@ header {
     z-index: 1000;
     padding: 20px 20px; /* Adjusted padding for spacing */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 75px; /* 2.5 times the size of typical search bar */
+    height: 70px; 
 }
 
 .nav-container {
@@ -39,7 +39,7 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 10px 0; /* Padding for spacing */
-    margin-left: 20px; /* Adjusted margin for left spacing */
+    margin-left: 50px; /* Adjusted margin for left spacing */
 }
 
 .nav-links {
@@ -69,7 +69,7 @@ header {
 
 /* Main content area */
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 150px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
