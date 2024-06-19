@@ -9,16 +9,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fff;
-    color: #000;
+    background-color: #282A36;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
 /* Navigation bar styling */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .nav-title {
