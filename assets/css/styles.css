@@ -1,31 +1,22 @@
-/* Reset default browser styles */
-body, nav, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Navigation Bar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-nav {
-  background-color: #333; /* Dark background color */
-}
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Vaibhav Nadipalli</a></li> <!-- Updated item -->
+  </ul>
+</nav>
 
-nav ul {
-  display: flex; /* Flexbox layout */
-  justify-content: center; /* Center items horizontally */
-  padding: 10px 0; /* Padding inside the navigation bar */
-}
-
-nav ul li {
-  margin: 0 10px; /* Margin between list items */
-}
-
-nav ul li a {
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Padding inside each link */
-  display: inline-block; /* Make links behave like blocks */
-}
-
-nav ul li a:hover {
-  background-color: #555; /* Darker background on hover */
-}
+</body>
+</html>
