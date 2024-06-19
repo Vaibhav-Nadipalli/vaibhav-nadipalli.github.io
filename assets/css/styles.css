@@ -89,7 +89,7 @@ header {
 }
 
 /* Show nav links when checkbox is checked */
-.nav-toggle:checked + .nav-toggle-label + .nav-menu {
+.nav-toggle:checked ~ .nav-menu {
     display: flex;
     position: absolute;
     top: 75px;
@@ -101,12 +101,12 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links {
+.nav-toggle:checked ~ .nav-menu .nav-links {
     flex-direction: column;
     width: 100%;
 }
 
-.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links li {
+.nav-toggle:checked ~ .nav-menu .nav-links li {
     margin: 10px 0;
 }
 
@@ -145,7 +145,7 @@ section {
         margin-left: 10px;
     }
 
-    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    .nav-toggle:checked ~ .nav-menu {
         top: 75px;
         left: 0;
         width: 100%;
