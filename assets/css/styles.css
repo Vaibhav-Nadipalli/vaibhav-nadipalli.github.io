@@ -51,6 +51,7 @@ header {
     font-size: 1.5em;
     cursor: pointer;
     margin-left: 20px; /* Increased margin between hamburger menu and title */
+    margin-top: 5px; /* Adjusted margin to move toggle up */
 }
 
 nav {
