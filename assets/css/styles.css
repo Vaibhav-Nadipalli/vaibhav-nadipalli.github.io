@@ -15,7 +15,7 @@
     margin: 0 auto; /* Center-align the container */
     padding: 10px 20px; /* Padding inside container */
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: flex-end; /* Align items to the right */
 }
 
 .navbar a {
