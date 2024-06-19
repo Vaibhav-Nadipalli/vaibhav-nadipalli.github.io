@@ -43,6 +43,11 @@ header {
     margin-left: 20px; /* Increased margin for space from left edge */
 }
 
+.nav-title a {
+    text-decoration: none;
+    color: #000; /* Black color */
+}
+
 .nav-toggle {
     display: none; /* Hide by default */
 }
