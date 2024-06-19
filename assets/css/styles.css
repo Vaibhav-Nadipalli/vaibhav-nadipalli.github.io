@@ -25,7 +25,7 @@ header {
     z-index: 1000;
     padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 50px; /* Decreased height by 15 pixels */
+    height: 60px; /* Decreased height by 15 pixels */
 }
 
 .nav-container {
@@ -38,7 +38,7 @@ header {
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
-    margin: 0; /* Reset margin */
+    margin: 10; /* Reset margin */
     padding: 0; /* Reset padding */
     margin-left: 100px; /* Increased margin for space from left edge */
 }
@@ -50,7 +50,7 @@ header {
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: 30px; /* Increased margin between hamburger menu and title */
+    margin-left: 50px; /* Increased margin between hamburger menu and title */
 }
 
 nav {
