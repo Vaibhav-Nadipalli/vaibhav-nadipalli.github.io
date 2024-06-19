@@ -74,6 +74,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    flex-direction: row; /* Horizontal layout by default */
 }
 
 .nav-links li {
@@ -135,6 +136,20 @@ h2, h3 {
         top: 60px; /* Adjusted top position for mobile */
         right: 0; /* Align navigation to the right */
         width: 200px; /* Example width for mobile navigation */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Vertical layout for mobile */
+        align-items: flex-end; /* Right align on mobile */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjusted margin for mobile */
+    }
+
+    header {
+        flex-direction: row-reverse; /* Reverse direction on mobile to keep toggle on right */
+        justify-content: flex-end; /* Align items to end on mobile */
     }
 
     main {
