@@ -63,8 +63,7 @@ header {
 }
 
 .nav-links li a:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-    color: #000; /* Black text on hover */
+    color: #282c3f; /* Navy text on hover */
 }
 
 /* Main content area */
