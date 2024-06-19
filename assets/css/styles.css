@@ -21,6 +21,8 @@ header {
 .site-name h1 {
   margin: 0;
   font-size: 1.5rem;
+  /* Adjusting position to the left */
+  margin-right: auto; /* Pushes other elements to the right */
 }
 
 nav ul {
@@ -31,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin-left: 1rem; /* Adjust spacing between navigation items */
 }
 
 nav ul li a {
