@@ -25,13 +25,14 @@ header {
     z-index: 1000;
     padding: 20px 0; /* Vertical padding */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 85px; /* Increased height by 10 pixels */
+    height: 105px; /* Increased height by 20 pixels */
 }
 
 .nav-container {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Horizontal padding */
 }
 
 .nav-title {
@@ -39,6 +40,19 @@ header {
     color: #000; /* Black color */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
+}
+
+.nav-toggle {
+    display: none; /* Hide by default */
+}
+
+.nav-toggle-label {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
 }
 
 .nav-links {
@@ -66,10 +80,15 @@ header {
     color: #000; /* Black text on hover */
 }
 
+/* Show nav links when checkbox is checked */
+.nav-toggle:checked + nav {
+    display: block;
+}
+
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 100px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 125px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
@@ -84,4 +103,42 @@ h2, h3 {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fff; /* White text */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 10px; /* Adjusted padding for mobile */
+    }
+
+    .nav-title {
+        font-size: 1.1em; /* Smaller font size for mobile */
+    }
+
+    .nav-toggle {
+        display: none; /* Hide checkbox toggle initially */
+    }
+
+    .nav-toggle-label {
+        display: block; /* Display hamburger menu label */
+    }
+
+    nav {
+        position: absolute;
+        top: 100%; /* Position dropdown below header */
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* White background */
+        padding: 10px 0; /* Vertical padding */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjusted margin for mobile */
+    }
 }
