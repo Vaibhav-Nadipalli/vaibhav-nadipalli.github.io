@@ -1,32 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
+/* styles.css */
+
+/* Reset default styles for list */
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #333; /* Background color of the navbar */
 }
 
-nav {
-    background-color: #333; /* Background color of the navigation bar */
+/* Style the list items - horizontal layout */
+li {
+    display: inline;
 }
 
-nav ul {
-    list-style-type: none; /* Remove default bullets */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Clear floats */
-}
-
-nav ul li {
-    float: left; /* Make list items float left to create horizontal arrangement */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
+/* Style the links inside the list items */
+li a {
+    display: inline-block;
+    color: white; /* Text color of the links */
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px; /* Padding around each link */
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #555; /* Background color on hover */
+/* Change color on hover */
+li a:hover {
+    background-color: #111; /* Darker background color on hover */
 }
