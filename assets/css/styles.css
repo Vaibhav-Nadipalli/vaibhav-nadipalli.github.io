@@ -21,37 +21,42 @@ header {
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
-    top: 0; /* Adjusted to be at the very top */
+    top: 0;
     z-index: 1000;
-    padding: 15px 0; /* Vertical padding decreased by 15 pixels */
+    padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 75px; /* Decreased height by 15 pixels */
+    height: 75px;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Horizontal padding */
+    padding: 0 20px;
 }
 
 .nav-title {
-    font-size: 1.3em; /* Font size */
-    color: #000; /* Black color */
-    margin: 5px 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    margin-left: 20px; /* Increased margin for space from left edge */
+    font-size: 1.3em;
+    color: #000;
+    margin: 5px 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.nav-title a {
+    text-decoration: none;
+    color: #000;
 }
 
 .nav-toggle {
-    display: none; /* Hide by default */
+    display: none;
 }
 
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: auto; /* Align to the right */
-    margin-top: 5px; /* Adjusted margin to move toggle up */
+    margin-left: auto;
+    margin-top: 5px;
 }
 
 .nav-menu {
@@ -65,7 +70,7 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px; /* Adjust margin for spacing */
+    margin-left: 20px;
 }
 
 .nav-links li:first-child {
@@ -73,21 +78,21 @@ header {
 }
 
 .nav-links li a {
-    color: #000; /* Black text */
+    color: #000;
     text-decoration: none;
-    padding: 0px 15px; /* Adjusted padding */
-    transition: color 0.3s ease; /* Transition color only */
+    padding: 0px 15px;
+    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #007bff; /* Blue text on hover */
+    color: #007bff;
 }
 
 /* Show nav links when checkbox is checked */
-.nav-toggle:checked + .nav-menu {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 75px; /* Adjust based on header height */
+    top: 75px;
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -96,21 +101,21 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.nav-toggle:checked + .nav-menu .nav-links {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links {
     flex-direction: column;
     width: 100%;
 }
 
-.nav-toggle:checked + .nav-menu .nav-links li {
+.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links li {
     margin: 10px 0;
 }
 
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 90px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 90px auto 20px;
     padding: 20px;
-    background-color: #282c3f; /* Dark navy background */
+    background-color: #282c3f;
     color: #fff;
 }
 
@@ -122,32 +127,28 @@ section {
 .section-title {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 /* Media query for mobile */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 10px; /* Adjusted padding for mobile */
+        padding: 0 10px;
     }
 
     .nav-title {
-        font-size: 1.1em; /* Smaller font size for mobile */
-        margin-left: 10px; /* Adjusted margin for mobile */
+        font-size: 1.1em;
+        margin-left: 10px;
     }
 
     .nav-toggle-label {
-        margin-left: 10px; /* Adjusted margin for mobile */
+        margin-left: 10px;
     }
 
-    nav {
-        position: absolute;
-        top: 75px; /* Adjusted top position for mobile (same as header height) */
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        top: 75px;
         left: 0;
         width: 100%;
-        background-color: #fff; /* White background */
-        padding: 10px 0; /* Vertical padding */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .nav-links {
@@ -156,14 +157,14 @@ section {
     }
 
     .nav-links li {
-        margin: 10px 0; /* Adjusted margin for mobile */
+        margin: 10px 0;
     }
 
     header {
-        top: 0; /* Ensure header is at the top on mobile */
+        top: 0;
     }
 
     main {
-        margin-top: 75px; /* Adjust main content margin to accommodate fixed header on mobile */
+        margin-top: 75px;
     }
 }
