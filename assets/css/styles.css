@@ -21,11 +21,11 @@ header {
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
-    top: 10;
+    top: 5;
     z-index: 1000;
     padding: 15px 0; /* Vertical padding decreased by 15 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 60px; /* Decreased height by 15 pixels */
+    height: 70px; /* Decreased height by 15 pixels */
 }
 
 .nav-container {
