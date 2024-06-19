@@ -7,7 +7,7 @@ body {
 header {
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 40px; /* Adjust height as needed */
+    height: 50px; /* Adjust height as needed */
     line-height: 40px; /* Center align text vertically */
 }
 
@@ -28,6 +28,14 @@ nav ul li a {
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Black font color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
 nav ul li a:hover {
-    color: #007bff; /* Blue color on hover */
+    color: #0366d6; /* Specific blue color on hover */
+}
+
 }
