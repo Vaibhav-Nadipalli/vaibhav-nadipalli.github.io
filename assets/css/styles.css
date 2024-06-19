@@ -46,6 +46,11 @@ header {
     margin-left: 20px; /* Increased margin for space from left edge */
 }
 
+.nav-title a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from parent */
+}
+
 .nav-toggle {
     display: none; /* Hide by default */
 }
