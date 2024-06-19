@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #282A36;
+    background-color: #282c3f; /* Dark navy background */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -17,8 +17,8 @@ body {
 
 /* Navigation bar styling */
 header {
-    background-color: #fff;
-    color: #000;
+    background-color: #1e2141; /* Darker navy background */
+    color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,7 +36,9 @@ header {
 
 .nav-title {
     font-size: 1.5em;
-    color: #000; /* Set title color to black */
+    color: #fff; /* White text */
+    margin: 0; /* Reset margin */
+    padding: 10px 0; /* Add padding for spacing */
 }
 
 .nav-links {
@@ -53,25 +55,23 @@ header {
 }
 
 .nav-links li a {
-    color: #000;
+    color: #fff; /* White text */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: #000;
-    color: #fff; /* Invert text color on hover for better visibility */
+    background-color: #1e2141; /* Darker navy background on hover */
 }
 
 /* Main content area */
 main {
     max-width: 800px;
-    margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
+    margin: 100px auto 20px; /* Adjusted margin to account for fixed header and center vertically */
     padding: 20px;
-    background-color: #282A36;
+    background-color: #282c3f; /* Dark navy background */
     color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 section {
@@ -82,5 +82,5 @@ section {
 h2, h3 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #fff; /* Set heading color to white */
+    color: #fff; /* White text */
 }
