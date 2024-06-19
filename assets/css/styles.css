@@ -31,13 +31,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Increased padding for better spacing */
+    padding: 0 20px; /* Adjust padding for spacing */
 }
 
 .nav-title {
     font-size: 1.5em;
     color: #000; /* Set title color to black */
-    margin-left: 20px; /* Adjust margin for spacing */
 }
 
 .nav-links {
@@ -46,7 +45,7 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 20px; /* Adjust margin for spacing */
 }
 
 .nav-links li:first-child {
@@ -70,7 +69,7 @@ main {
     max-width: 800px;
     margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
-    background-color: #000;
+    background-color: #282A36;
     color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -80,14 +79,8 @@ section {
     margin: 20px 0;
 }
 
-h2 {
+h2, h3 {
     font-size: 2em;
-    margin-bottom: 10px;
-    color: #fff; /* Set heading color to white */
-}
-
-h3 {
-    font-size: 1.5em;
     margin-bottom: 10px;
     color: #fff; /* Set heading color to white */
 }
