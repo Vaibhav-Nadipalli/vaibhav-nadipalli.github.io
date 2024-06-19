@@ -6,14 +6,14 @@
     <title>Vaibhav Nadipalli</title>
     <link rel="stylesheet" href="/assets/css/styles.css"> <!-- Link to your CSS file -->
 </head>
-<body id="top">
+<body>
     <header>
         <div class="nav-container">
-            <h3 class="nav-title"><a href="#top">Vaibhav Nadipalli</a></h3> <!-- Scroll to top link -->
+            <h3 class="nav-title">Vaibhav Nadipalli</h3> <!-- Header title -->
             <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!-- Checkbox for navigation toggle -->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#bio">Biography</a></li> <!-- Navigation links -->
+                    <li><a href="#bio">Biography</a></li> <!-- Anchor links to sections -->
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -24,30 +24,39 @@
     </header>
 
     <main>
-        <section id="bio" class="navy-background">
+        <section id="bio"> <!-- Section for Biography -->
             <h2>Biography</h2>
-            <p>I'm a high school student obsessed with technology, self-improvement and business. Here I plan to record my products and the occasional blog.</p> <!-- Placeholder content -->
+            <p>I'm a high school student obsessed with technology, self-improvement and business. Here I plan to record my products and the occasional blog.</p>
         </section>
 
-        <section id="portfolio" class="light-navy-background">
+        <section id="portfolio"> <!-- Section for Portfolio -->
             <h2>Portfolio</h2>
-            <p>This is my portfolio section. Here you can find information about projects I've worked on.</p> <!-- Placeholder content -->
+            <p>Here you can find my latest projects and creations.</p>
         </section>
 
-        <section id="blog" class="navy-background">
+        <section id="blog"> <!-- Section for Blog -->
             <h2>Blog</h2>
-            <p>Welcome to my blog! Here I share thoughts, insights, and experiences related to technology and business.</p> <!-- Placeholder content -->
+            <p>Read my thoughts and insights on various topics.</p>
         </section>
 
-        <section id="contact" class="light-navy-background">
+        <section id="contact"> <!-- Section for Contact -->
             <h2>Contact</h2>
-            <p>Feel free to reach out to me through the following channels:</p> <!-- Placeholder content -->
-            <ul>
-                <li>Email: example@email.com</li>
-                <li>Phone: +1234567890</li>
-                <li>Social Media: @example</li>
-            </ul>
+            <p>Get in touch with me.</p>
         </section>
     </main>
+
+    <script>
+        // JavaScript to handle smooth scrolling when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
