@@ -1,19 +1,35 @@
-/* Reset some default styles for cleaner look */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: white; /* Ensure the rest of the page is white */
 }
 
 header {
-    background-color: #ffffff; /* White background */
+    background-color: #f9f9f9; /* Light gray background */
+    border-bottom: 1px solid #ddd; /* Gray bottom border */
+    padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-    height: 50px; /* Adjust height as needed */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limit the width of the header content */
+    margin: 0 auto; /* Center align the header content */
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color */
 }
 
 nav ul {
@@ -24,16 +40,14 @@ nav ul {
 }
 
 nav ul li {
-    flex: 1;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    display: block;
     text-decoration: none;
-    text-align: center;
-    color: #000000; /* Black text color */
-    padding: 15px 0;
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #333; /* Dark gray text color */
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
