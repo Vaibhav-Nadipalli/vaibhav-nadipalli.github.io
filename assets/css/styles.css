@@ -63,7 +63,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #282c3f; /* Navy text on hover */
+    color: #0000FF; /* blue text on hover */
 }
 
 /* Main content area */
