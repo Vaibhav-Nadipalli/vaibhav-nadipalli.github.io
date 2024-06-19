@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horizontal Navigation Bar</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+nav {
+    background-color: #333; /* Background color of the navigation bar */
+}
 
-</body>
-</html>
+nav ul {
+    list-style-type: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Clear floats */
+}
+
+nav ul li {
+    float: left; /* Make list items float left to create horizontal arrangement */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Background color on hover */
+}
