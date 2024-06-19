@@ -38,7 +38,7 @@ header {
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
-    margin: 0; /* Reset margin */
+    margin: 5px 0; /* Reset margin */
     padding: 0; /* Reset padding */
     margin-left: 20px; /* Increased margin for space from left edge */
 }
