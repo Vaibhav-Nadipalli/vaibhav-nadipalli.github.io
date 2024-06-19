@@ -9,16 +9,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     margin: 0;
     padding: 0;
 }
 
 /* Navigation bar styling */
 header {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
