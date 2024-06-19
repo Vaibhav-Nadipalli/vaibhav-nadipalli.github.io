@@ -31,6 +31,12 @@ header {
     align-items: center;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-title {
     font-size: 1.3em; /* Font size */
     color: #000; /* Black color */
@@ -75,7 +81,7 @@ nav {
 
 .nav-links li a {
     color: #000; /* Black text */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     padding: 10px 15px; /* Adjusted padding */
     transition: color 0.3s ease; /* Transition color only */
 }
