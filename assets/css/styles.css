@@ -19,6 +19,7 @@ header {
 
 .header-right {
   display: flex;
+  align-items: center;
 }
 
 .header-right a {
