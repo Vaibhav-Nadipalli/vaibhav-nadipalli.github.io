@@ -6,23 +6,14 @@
 }
 
 /* Style for the navigation bar */
-.top-nav {
+.navbar {
+    overflow: hidden; /* Clear floats */
     background-color: #333; /* Dark background color */
 }
 
-/* Style for the list inside the navigation bar */
-.top-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    overflow: hidden; /* Clear floats */
-}
-
-/* Style for each list item */
-.top-nav ul li {
-    float: left; /* Float the list items to display horizontally */
-}
-
 /* Style for each link (anchor tag) */
-.top-nav ul li a {
+.navbar a {
+    float: left; /* Float links to display horizontally */
     display: block; /* Display links as block elements */
     color: white; /* Text color */
     text-align: center; /* Center-align text */
@@ -31,6 +22,6 @@
 }
 
 /* Change link color on hover */
-.top-nav ul li a:hover {
+.navbar a:hover {
     background-color: #555; /* Darker background color on hover */
 }
