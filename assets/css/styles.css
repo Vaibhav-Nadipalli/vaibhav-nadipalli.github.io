@@ -1,31 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles for cleaner look */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 40px; /* Adjust height as needed */
-    line-height: 40px; /* Center align text vertically */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    height: 50px; /* Adjust height as needed */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust spacing between items */
+    flex: 1;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
-    color: #000000; /* Black font color */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    text-align: center;
+    color: #000000; /* Black text color */
+    padding: 15px 0;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 nav ul li a:hover {
