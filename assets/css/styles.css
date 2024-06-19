@@ -63,12 +63,12 @@ header {
 
 .nav-links li a:hover {
     background-color: #f0f0f0; /* Light grey background on hover */
-    color: #000; /* Black text on hover */
+    color: #0000FF; /* Blue text on hover */
 }
 
 /* Main content area */
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
     padding: 20px;
     background-color: #282c3f; /* Dark navy background */
