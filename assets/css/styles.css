@@ -134,7 +134,7 @@ section {
 .section-container {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Two columns: one for title, one for content */
-    grid-gap: 20px;
+    grid-gap: 20px; /* Gap between columns */
     align-items: start;
 }
 
@@ -146,6 +146,7 @@ section {
 
 .section-content {
     font-size: 1em;
+    margin-left: 20px; /* Increased distance between title and content */
 }
 
 /* Media query for mobile */
@@ -203,5 +204,9 @@ section {
 
     .section-title, .section-content {
         width: 100%;
+    }
+
+    .section-content {
+        margin-left: 0; /* Reset margin for mobile */
     }
 }
