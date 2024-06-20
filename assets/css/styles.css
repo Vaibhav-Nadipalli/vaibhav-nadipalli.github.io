@@ -60,43 +60,11 @@ header {
 .nav-toggle-label {
     font-size: 1.8em; /* Increased size */
     cursor: pointer;
-    margin-left: auto; /* Pushed to the right */
-    margin-right: 20px; /* Added margin to align with right edge */
+    margin-left: 20px; /* Adjusted margin */
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links li:first-child {
-    margin-left: 0;
-}
-
-.nav-links li a {
-    color: #000;
-    text-decoration: none;
-    padding: 0px 15px;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #007bff;
-}
-
-/* Show nav links when checkbox is checked */
-.nav-toggle:checked + .nav-toggle-label + .nav-menu {
-    display: flex;
+    display: none; /* Initially hide menu */
     position: absolute;
     top: 75px; /* Adjusted top position */
     left: 0;
@@ -107,20 +75,27 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links {
+.nav-links {
+    list-style: none;
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    margin: 0;
 }
 
-.nav-toggle:checked + .nav-toggle-label + .nav-menu .nav-links li {
+.nav-links li {
     margin: 10px 0;
 }
 
-/* Hide hamburger menu on desktop */
-@media (min-width: 769px) {
-    .nav-toggle-label {
-        display: none;
-    }
+.nav-links li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
 }
 
 /* Main content area */
@@ -167,38 +142,32 @@ main {
     }
 
     .nav-toggle-label {
-        margin-left: 10px;
-        margin-right: auto; /* Center the hamburger menu */
+        margin-left: auto; /* Move hamburger menu to the right */
+        margin-right: 20px; /* Adjusted margin for alignment */
     }
 
     .nav-menu {
-        display: none;
-    }
-
-    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
-        display: flex;
-        position: absolute;
-        top: 75px; /* Adjusted top position */
-        left: 0;
+        position: fixed; /* Fixed position for mobile menu */
+        top: 70px; /* Adjusted top position */
         width: 100%;
-        background-color: #fff;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .nav-links {
         flex-direction: column;
         align-items: center;
-        margin-top: 0; /* Adjusted margin to align with adjusted header height */
+        margin-top: 20px; /* Adjusted margin to align with adjusted header height */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
 
     header {
-        top: 0;
+        height: 70px; /* Decreased height of header */
     }
 
     main {
-        margin-top: 75px; /* Adjusted margin to compensate for adjusted header height */
+        margin-top: 70px; /* Adjusted margin to compensate for adjusted header height */
     }
 
     .section-container {
