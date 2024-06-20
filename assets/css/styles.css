@@ -23,9 +23,9 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 7px 0; /* Decreased header height by 8 pixels */
+    padding: 5px 0; /* Decreased header height by 5 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 67px; /* Adjusted height to compensate for padding change */
+    height: 60px; /* Adjusted height to compensate for padding change */
 }
 
 .nav-container {
@@ -38,7 +38,7 @@ header {
 .nav-title {
     font-size: 1.3em;
     color: #000;
-    margin: 10px 0; /* Increased margin around the title */
+    margin: 12px 0; /* Increased margin around the title */
     padding: 0;
     margin-left: 20px;
 }
@@ -56,7 +56,7 @@ header {
     font-size: 1.8em; /* Increased size by 3 pixels */
     cursor: pointer;
     margin-left: auto;
-    margin-top: 10px; /* Aligned with adjusted header height */
+    margin-top: 12px; /* Aligned with adjusted header height */
 }
 
 .nav-menu {
@@ -67,7 +67,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    margin-top: 10px; /* Aligned with adjusted header height */
+    margin-top: 12px; /* Aligned with adjusted header height */
 }
 
 .nav-links li {
@@ -93,7 +93,7 @@ header {
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 67px; /* Adjusted top position to align with adjusted header height */
+    top: 60px; /* Adjusted top position to align with adjusted header height */
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -121,7 +121,7 @@ header {
 /* Main content area */
 main {
     max-width: 1000px; /* Increased max-width */
-    margin: 83px auto 20px; /* Adjusted margin to compensate for adjusted header height */
+    margin: 65px auto 20px; /* Adjusted margin to compensate for adjusted header height */
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
@@ -137,7 +137,7 @@ main {
 .section-title {
     font-family: 'Montserrat', sans-serif; /* Montserrat font with sans-serif fallback */
     font-weight: normal; /* Ensure not bold */
-    font-size: 2em;
+    font-size: 2.5em; /* Increased font size by 5 */
     margin-bottom: 30px; /* Increased margin around the title */
     color: #777; /* Grey color */
     grid-column: 1; /* Place the heading in the first column */
@@ -173,7 +173,7 @@ main {
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex;
         position: absolute;
-        top: 67px; /* Adjusted top position to align with adjusted header height */
+        top: 60px; /* Adjusted top position to align with adjusted header height */
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -188,16 +188,12 @@ main {
         margin-top: 7px; /* Adjusted margin to align with adjusted header height */
     }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-
     header {
         top: 0;
     }
 
     main {
-        margin-top: 75px;
+        margin-top: 55px; /* Adjusted margin to compensate for adjusted header height */
     }
 
     .section-container {
