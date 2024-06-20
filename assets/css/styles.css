@@ -23,22 +23,28 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 20px 0; /* Increased header height by 5 pixels */
+    padding: 20px 0; /* Adjusted padding for header */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 65px; /* Adjusted height to compensate for padding change */
+    height: 70px; /* Increased height of header */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Align items vertically */
     padding: 0 20px;
+    width: 100%;
+    max-width: 1000px; /* Adjusted max-width */
+    margin: 0 auto; /* Center nav-container horizontally */
 }
 
 .nav-title {
     font-size: 1.3em;
     color: #000;
-    margin: 10px 0; /* Increased margin around the title */
+    margin: 0;
     padding: 0;
     margin-left: 20px;
 }
@@ -53,11 +59,10 @@ header {
 }
 
 .nav-toggle-label {
-    font-size: 1.8em; /* Increased size by 3 pixels */
+    font-size: 1.8em; /* Increased size */
     cursor: pointer;
     margin-left: auto; /* Pushed to the right */
     margin-right: 20px; /* Added margin to align with right edge */
-    margin-top: 0; /* Align with adjusted header height */
 }
 
 .nav-menu {
@@ -68,7 +73,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    margin-top: 0; /* Aligned with adjusted header height */
+    margin: 0;
 }
 
 .nav-links li {
@@ -94,7 +99,7 @@ header {
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 65px; /* Adjusted top position to align with adjusted header height */
+    top: 70px; /* Adjusted top position */
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -122,7 +127,7 @@ header {
 /* Main content area */
 main {
     max-width: 1000px; /* Increased max-width */
-    margin: 75px auto 20px; /* Adjusted margin to compensate for adjusted header height */
+    margin: 90px auto 20px; /* Adjusted margin to compensate for adjusted header height */
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
@@ -165,7 +170,6 @@ main {
     .nav-toggle-label {
         margin-left: 10px;
         margin-right: auto; /* Center the hamburger menu */
-        margin-top: 0; /* Align with adjusted header height */
     }
 
     .nav-menu {
@@ -175,7 +179,7 @@ main {
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex;
         position: absolute;
-        top: 65px; /* Adjusted top position to align with adjusted header height */
+        top: 70px; /* Adjusted top position */
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -195,7 +199,7 @@ main {
     }
 
     main {
-        margin-top: 70px; /* Adjusted margin to compensate for adjusted header height */
+        margin-top: 75px; /* Adjusted margin to compensate for adjusted header height */
     }
 
     .section-container {
