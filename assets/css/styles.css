@@ -197,3 +197,14 @@ section p {
         margin-bottom: 10px;
     }
 }
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+    .nav-toggle-label {
+        display: none; /* Hide on desktop */
+    }
+
+    .nav-menu {
+        display: flex; /* Always show menu on desktop */
+    }
+}
