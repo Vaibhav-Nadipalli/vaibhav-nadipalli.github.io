@@ -53,7 +53,7 @@ header {
 }
 
 .nav-toggle-label {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increased size by 3 pixels */
     cursor: pointer;
     margin-left: auto;
     margin-top: 5px;
@@ -110,9 +110,16 @@ header {
     margin: 10px 0;
 }
 
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
 /* Main content area */
 main {
-    max-width: 800px;
+    max-width: 1000px; /* Increased max-width */
     margin: 90px auto 20px;
     padding: 20px;
     background-color: #282c3f;
@@ -124,10 +131,24 @@ section {
     margin: 20px 0;
 }
 
+.section-container {
+    display: grid;
+    grid-template-columns: 300px auto; /* Increased width of the first column */
+    grid-gap: 50px; /* Increased gap between columns */
+    align-items: start;
+}
+
 .section-title {
     font-size: 2em;
-    margin-bottom: 10px;
-    color: #fff;
+    margin-bottom: 20px; /* Increased margin */
+    color: #777; /* Grey color */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+}
+
+.section-content {
+    font-size: 1em;
+    padding-left: 20px; /* Increased padding to push content to the right */
+    line-height: 1.8; /* Increased line height for readability */
 }
 
 /* Media query for mobile */
@@ -145,10 +166,20 @@ section {
         margin-left: 10px;
     }
 
+    .nav-menu {
+        display: none;
+    }
+
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex;
+        position: absolute;
         top: 75px;
         left: 0;
         width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .nav-links {
@@ -166,5 +197,19 @@ section {
 
     main {
         margin-top: 75px;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title, .section-content {
+        width: 100%;
+    }
+
+    .section-content {
+        margin-left: 0; /* Reset margin for mobile */
+        padding-left: 0; /* Reset padding for mobile */
     }
 }
