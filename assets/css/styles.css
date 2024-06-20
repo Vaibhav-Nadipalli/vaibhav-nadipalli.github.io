@@ -119,7 +119,7 @@ header {
 
 /* Main content area */
 main {
-    max-width: 800px;
+    max-width: 1000px; /* Increased max-width */
     margin: 90px auto 20px;
     padding: 20px;
     background-color: #282c3f;
@@ -133,19 +133,22 @@ section {
 
 .section-container {
     display: grid;
-    grid-template-columns: 200px auto; /* Two columns with larger gap */
-    grid-gap: 200px; /* Increased gap between columns */
+    grid-template-columns: 300px auto; /* Increased width of the first column */
+    grid-gap: 50px; /* Increased gap between columns */
     align-items: start;
 }
 
 .section-title {
     font-size: 2em;
-    margin-bottom: 10px;
-    color: #fff;
+    margin-bottom: 20px; /* Increased margin */
+    color: #777; /* Grey color */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
 }
 
 .section-content {
     font-size: 1em;
+    padding-left: 20px; /* Increased padding to push content to the right */
+    line-height: 1.8; /* Increased line height for readability */
 }
 
 /* Media query for mobile */
@@ -207,5 +210,6 @@ section {
 
     .section-content {
         margin-left: 0; /* Reset margin for mobile */
+        padding-left: 0; /* Reset padding for mobile */
     }
 }
