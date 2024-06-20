@@ -25,9 +25,9 @@ header {
     z-index: 1000;
     padding: 15px 0; /* Adjusted padding for header */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 70px; /* Increased height of header */
+    height: 75px; /* Increased height of header */
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: space-between; /* Center content horizontally */
     align-items: center; /* Center content vertically */
 }
 
@@ -98,7 +98,7 @@ header {
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 70px; /* Adjusted top position */
+    top: 75px; /* Adjusted top position */
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -128,7 +128,7 @@ main {
     max-width: 1000px; /* Increased max-width */
     margin: 90px auto 20px; /* Adjusted margin to compensate for adjusted header height */
     padding: 20px;
-    background-color: #282c3f;
+    background-color: #212529; /* Dark navy background */
     color: #fff;
 }
 
@@ -178,7 +178,7 @@ main {
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex;
         position: absolute;
-        top: 70px; /* Adjusted top position */
+        top: 75px; /* Adjusted top position */
         left: 0;
         width: 100%;
         background-color: #fff;
