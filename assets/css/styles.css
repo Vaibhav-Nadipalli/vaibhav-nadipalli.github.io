@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #212529; /* Dark navy background */
+    background-color: #282c3f; /* Dark navy background */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -27,14 +27,14 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: 70px; /* Increased height of header */
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: space-between; /* Distribute items evenly */
     align-items: center; /* Center content vertically */
 }
 
 .nav-container {
     display: flex;
     align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: flex-start; /* Align items to the left */
     width: 100%;
     max-width: 1000px; /* Adjusted max-width */
     margin: 0 auto; /* Center nav-container horizontally */
@@ -45,7 +45,7 @@ header {
     color: #000;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 20px; /* Left margin for Vaibhav Nadipalli */
 }
 
 .nav-title a {
@@ -121,10 +121,6 @@ header {
     .nav-toggle-label {
         display: none;
     }
-
-    .nav-menu {
-        display: flex !important; /* Ensure nav links are always visible on desktop */
-    }
 }
 
 /* Main content area */
@@ -136,17 +132,26 @@ main {
     color: #fff;
 }
 
+.section-container {
+    display: grid;
+    grid-template-columns: auto; /* Single column layout */
+    grid-gap: 50px; /* Increased gap between sections */
+    align-items: start;
+}
+
 .section-title {
     font-family: 'Montserrat', sans-serif; /* Montserrat font with sans-serif fallback */
     font-weight: normal; /* Ensure not bold */
     font-size: 2.5em; /* Increased font size by 5 */
     margin-bottom: 30px; /* Increased margin around the title */
     color: #777; /* Grey color */
+    grid-column: 1; /* Place the heading in the first column */
 }
 
 .section-content {
     font-size: 1em;
     line-height: 1.8; /* Increased line height for readability */
+    grid-column: 2; /* Place the content in the second column */
     padding-left: 20px; /* Increased padding to push content to the right */
 }
 
@@ -194,6 +199,11 @@ main {
 
     main {
         margin-top: 75px; /* Adjusted margin to compensate for adjusted header height */
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
     }
 
     .section-title, .section-content {
