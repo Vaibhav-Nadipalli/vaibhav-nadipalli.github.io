@@ -131,10 +131,21 @@ section {
     margin: 20px 0;
 }
 
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: one for title, one for content */
+    grid-gap: 20px;
+    align-items: start;
+}
+
 .section-title {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fff;
+}
+
+.section-content {
+    font-size: 1em;
 }
 
 /* Media query for mobile */
@@ -183,5 +194,14 @@ section {
 
     main {
         margin-top: 75px;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title, .section-content {
+        width: 100%;
     }
 }
