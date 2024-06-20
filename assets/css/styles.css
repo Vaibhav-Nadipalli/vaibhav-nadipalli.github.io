@@ -146,7 +146,7 @@ section {
 
 .section-content {
     font-size: 1em;
-    margin-left: 20px; /* Increased distance between title and content */
+    margin-left: 100px; /* Increased distance between title and content */
 }
 
 /* Media query for mobile */
