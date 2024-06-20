@@ -134,7 +134,7 @@ main {
 }
 
 .section-title {
-    font-family: Georgia, serif; /* Georgia font */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font with sans-serif fallback */
     font-weight: normal; /* Ensure not bold */
     font-size: 2em;
     margin-bottom: 20px; /* Increased margin */
