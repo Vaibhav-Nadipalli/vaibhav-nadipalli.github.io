@@ -89,7 +89,7 @@ header {
     color: #007bff;
 }
 
-/* Show nav links when checkbox is checked */
+/* Show nav links when checkbox is checked on mobile */
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
@@ -161,7 +161,12 @@ section p {
         margin-left: 10px;
     }
 
+    .nav-menu {
+        display: none; /* Hide nav menu by default on mobile */
+    }
+
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex; /* Show nav menu when checkbox is checked */
         top: 75px;
         left: 0;
         width: 100%;
@@ -170,11 +175,6 @@ section p {
     .nav-links {
         flex-direction: column;
         align-items: center;
-        display: none; /* Hide links on mobile by default */
-    }
-
-    .nav-toggle:checked ~ .nav-menu .nav-links {
-        display: flex; /* Show links when checkbox is checked */
     }
 
     .nav-links li {
@@ -211,9 +211,5 @@ section p {
 
     .nav-menu {
         display: flex; /* Always show menu on desktop */
-    }
-
-    .nav-links {
-        display: flex; /* Show links on desktop */
     }
 }
