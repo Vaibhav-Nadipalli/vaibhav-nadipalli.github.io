@@ -170,6 +170,11 @@ section p {
     .nav-links {
         flex-direction: column;
         align-items: center;
+        display: none; /* Hide links on mobile by default */
+    }
+
+    .nav-toggle:checked ~ .nav-menu .nav-links {
+        display: flex; /* Show links when checkbox is checked */
     }
 
     .nav-links li {
@@ -206,5 +211,9 @@ section p {
 
     .nav-menu {
         display: flex; /* Always show menu on desktop */
+    }
+
+    .nav-links {
+        display: flex; /* Show links on desktop */
     }
 }
