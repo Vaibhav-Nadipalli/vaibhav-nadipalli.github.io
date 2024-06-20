@@ -128,9 +128,8 @@ main {
     max-width: 1000px; /* Increased max-width */
     margin: 90px auto 20px; /* Adjusted margin to compensate for adjusted header height */
     padding: 20px;
-    background-color: transparent; /* Transparent background */
+    background-color: #212529; /* Dark navy background */
     color: #fff;
-    overflow: hidden; /* Ensure no background color bleed */
 }
 
 .section-container {
