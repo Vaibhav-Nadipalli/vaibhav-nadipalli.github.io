@@ -23,9 +23,9 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 15px 0; /* Increased header height by 5 pixels */
+    padding: 10px 0; /* Decreased header height by 5 pixels */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 60px; /* Adjusted height to compensate for padding change */
+    height: 55px; /* Adjusted height to compensate for padding change */
 }
 
 .nav-container {
@@ -94,7 +94,7 @@ header {
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 60px; /* Adjusted top position to align with adjusted header height */
+    top: 55px; /* Adjusted top position to align with adjusted header height */
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -122,7 +122,7 @@ header {
 /* Main content area */
 main {
     max-width: 1000px; /* Increased max-width */
-    margin: 75px auto 20px; /* Adjusted margin to compensate for adjusted header height */
+    margin: 70px auto 20px; /* Adjusted margin to compensate for adjusted header height */
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
@@ -175,7 +175,7 @@ main {
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex;
         position: absolute;
-        top: 60px; /* Adjusted top position to align with adjusted header height */
+        top: 55px; /* Adjusted top position to align with adjusted header height */
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -195,7 +195,7 @@ main {
     }
 
     main {
-        margin-top: 70px; /* Adjusted margin to compensate for adjusted header height */
+        margin-top: 60px; /* Adjusted margin to compensate for adjusted header height */
     }
 
     .section-container {
