@@ -7,7 +7,7 @@
 
 /* Basic body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
@@ -53,11 +53,10 @@ header {
 }
 
 .nav-toggle-label {
-    font-size: 1.5em;
+    font-size: 1.8em;
     cursor: pointer;
     margin-left: auto;
     margin-top: 5px;
-    display: none; /* Hide on desktop by default */
 }
 
 .nav-menu {
@@ -89,7 +88,7 @@ header {
     color: #007bff;
 }
 
-/* Show nav links when checkbox is checked on mobile */
+/* Show nav links when checkbox is checked */
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
@@ -113,41 +112,34 @@ header {
 
 /* Main content area */
 main {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 90px auto 20px;
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
 }
 
 section {
-    display: flex;
-    align-items: flex-start;
     padding: 20px 0;
     margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .section-title {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #999; /* Modern grey title color */
-    flex: 0 0 200px; /* Fixed width for titles */
-}
-
-section p {
-    margin-left: 30px; /* Increase gap between titles and content */
-    flex: 1;
+    color: #888;
+    margin-right: 40px; /* Increase gap between titles and content */
 }
 
 /* Media query for mobile */
 @media (max-width: 768px) {
-    .nav-toggle-label {
-        display: block; /* Show on mobile */
-    }
-
     .nav-container {
         padding: 0 10px;
     }
@@ -161,12 +153,16 @@ section p {
         margin-left: 10px;
     }
 
+    .nav-toggle-label {
+        display: block;
+    }
+
     .nav-menu {
-        display: none; /* Hide nav menu by default on mobile */
+        display: none;
     }
 
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
-        display: flex; /* Show nav menu when checkbox is checked */
+        display: flex;
         top: 75px;
         left: 0;
         width: 100%;
@@ -191,25 +187,11 @@ section p {
 
     section {
         flex-direction: column;
-    }
-
-    section p {
-        margin-left: 0;
+        align-items: center;
     }
 
     .section-title {
-        flex: 0 0 auto; /* Adjust title width for mobile */
-        margin-bottom: 10px;
-    }
-}
-
-/* Hide hamburger on desktop */
-@media (min-width: 769px) {
-    .nav-toggle-label {
-        display: none; /* Hide on desktop */
-    }
-
-    .nav-menu {
-        display: flex; /* Always show menu on desktop */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
