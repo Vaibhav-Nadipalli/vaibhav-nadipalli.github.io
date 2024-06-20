@@ -128,8 +128,8 @@ main {
 
 .section-container {
     display: grid;
-    grid-template-columns: 350px auto; /* Increased width of the first column */
-    grid-gap: 50px; /* Increased gap between columns */
+    grid-template-columns: auto; /* Single column layout */
+    grid-gap: 50px; /* Increased gap between sections */
     align-items: start;
 }
 
@@ -139,12 +139,14 @@ main {
     font-size: 2em;
     margin-bottom: 20px; /* Increased margin */
     color: #777; /* Grey color */
+    grid-column: 1; /* Place the heading in the first column */
 }
 
 .section-content {
     font-size: 1em;
-    padding-left: 20px; /* Increased padding to push content to the right */
     line-height: 1.8; /* Increased line height for readability */
+    grid-column: 2; /* Place the content in the second column */
+    padding-left: 20px; /* Increased padding to push content to the right */
 }
 
 /* Media query for mobile */
