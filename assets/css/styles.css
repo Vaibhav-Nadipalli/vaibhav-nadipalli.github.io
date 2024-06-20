@@ -126,23 +126,19 @@ main {
     color: #fff;
 }
 
-section {
-    padding: 20px 0;
-    margin: 20px 0;
-}
-
 .section-container {
     display: grid;
-    grid-template-columns: 300px auto; /* Increased width of the first column */
+    grid-template-columns: 350px auto; /* Increased width of the first column */
     grid-gap: 50px; /* Increased gap between columns */
     align-items: start;
 }
 
 .section-title {
+    font-family: Georgia, serif; /* Georgia font */
+    font-weight: normal; /* Ensure not bold */
     font-size: 2em;
     margin-bottom: 20px; /* Increased margin */
     color: #777; /* Grey color */
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
 }
 
 .section-content {
