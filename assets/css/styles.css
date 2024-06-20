@@ -23,7 +23,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 20px 0; /* Adjusted padding for header */
+    padding: 15px 0; /* Adjusted padding for header */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: 70px; /* Increased height of header */
     display: flex;
@@ -33,9 +33,8 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center; /* Align items vertically */
-    padding: 0 20px;
+    justify-content: space-between; /* Distribute items evenly */
     width: 100%;
     max-width: 1000px; /* Adjusted max-width */
     margin: 0 auto; /* Center nav-container horizontally */
