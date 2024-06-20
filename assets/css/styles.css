@@ -1,49 +1,225 @@
-/* Reset default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* Reset default browser styles */
 
-/* Basic body styling */
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Basic body styling /
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #282c3f; /* Dark navy background */
-    color: #fff;
-    margin: 0;
-    padding: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #282c3f; / Dark navy background */
+color: #fff;
+margin: 0;
+padding: 0;
 }
 
-/* Navigation bar styling */
+/* Navigation bar styling /
 header {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    padding: 20px 0; /* Adjusted padding for header */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 70px; /* Increased height of header */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+background-color: #fff; / White background /
+color: #000; / Black text /
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+padding: 20px 0; / Adjusted padding for header /
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+height: 70px; / Increased height of header /
+display: flex;
+justify-content: center; / Center content horizontally /
+align-items: center; / Center content vertically */
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align items vertically */
-    padding: 0 20px;
-    width: 100%;
-    max-width: 1000px; /* Adjusted max-width */
-    margin: 0 auto; /* Center nav-container horizontally */
+display: flex;
+justify-content: space-between;
+align-items: center; /* Align items vertically /
+padding: 0 20px;
+width: 100%;
+max-width: 1000px; / Adjusted max-width /
+margin: 0 auto; / Center nav-container horizontally */
 }
 
 .nav-title {
-    font-size: 1.3em;
-    color: #000;
-    margin: 0;
-    padding: 0;
-   
+font-size: 1.3em;
+color: #000;
+margin: 0;
+padding: 0;
+margin-left: 20px;
+}
+
+.nav-title a {
+text-decoration: none;
+color: #000;
+}
+
+.nav-toggle {
+display: none;
+}
+
+.nav-toggle-label {
+font-size: 1.8em; /* Increased size /
+cursor: pointer;
+margin-left: auto; / Pushed to the right /
+margin-right: 20px; / Added margin to align with right edge */
+}
+
+.nav-menu {
+display: flex;
+align-items: center;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+margin: 0;
+}
+
+.nav-links li {
+margin-left: 20px;
+}
+
+.nav-links li
+{
+margin-left: 0;
+}
+
+.nav-links li a {
+color: #000;
+text-decoration: none;
+padding: 0px 15px;
+transition: color 0.3s ease;
+}
+
+.nav-links li a
+{
+color: #007bff;
+}
+
+/* Show nav links when checkbox is checked /
+.nav-toggle
++ .nav-toggle-label + .nav-menu {
+display: flex;
+position: absolute;
+top: 70px; / Adjusted top position */
+left: 0;
+width: 100%;
+background-color: #fff;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-toggle
++ .nav-toggle-label + .nav-menu .nav-links {
+flex-direction: column;
+width: 100%;
+}
+
+.nav-toggle
++ .nav-toggle-label + .nav-menu .nav-links li {
+margin: 10px 0;
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+.nav-toggle-label {
+display: none;
+}
+}
+
+/* Main content area /
+main {
+max-width: 1000px; / Increased max-width /
+margin: 90px auto 20px; / Adjusted margin to compensate for adjusted header height */
+padding: 20px;
+background-color: #282c3f;
+color: #fff;
+}
+
+.section-container {
+display: grid;
+grid-template-columns: auto; /* Single column layout /
+grid-gap: 50px; / Increased gap between sections */
+align-items: start;
+}
+
+.section-title {
+font-family: 'Montserrat', sans-serif; /* Montserrat font with sans-serif fallback /
+font-weight: normal; / Ensure not bold /
+font-size: 2.5em; / Increased font size by 5 /
+margin-bottom: 30px; / Increased margin around the title /
+color: #777; / Grey color /
+grid-column: 1; / Place the heading in the first column */
+}
+
+.section-content {
+font-size: 1em;
+line-height: 1.8; /* Increased line height for readability /
+grid-column: 2; / Place the content in the second column /
+padding-left: 20px; / Increased padding to push content to the right */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+.nav-container {
+padding: 0 10px;
+}
+
+css
+Copy code
+.nav-title {
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+.nav-toggle-label {
+    margin-left: 10px;
+    margin-right: auto; /* Center the hamburger menu */
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    display: flex;
+    position: absolute;
+    top: 70px; /* Adjusted top position */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0; /* Adjusted margin to align with adjusted header height */
+}
+
+header {
+    top: 0;
+}
+
+main {
+    margin-top: 75px; /* Adjusted margin to compensate for adjusted header height */
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title, .section-content {
+    width: 100%;
+}
+
+.section-content {
+    margin-left: 0; /* Reset margin for mobile */
+    padding-left: 0; /* Reset padding for mobile */
+}
+}
