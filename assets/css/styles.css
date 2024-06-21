@@ -83,6 +83,7 @@ header {
     text-decoration: none;
     padding: 0px 15px;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to nav links */
 }
 
 .nav-links li a:hover {
@@ -135,6 +136,7 @@ section {
     margin-bottom: 10px;
     color: #999; /* Modern grey title color */
     flex: 0 0 200px; /* Fixed width for titles */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to section titles */
 }
 
 section p {
