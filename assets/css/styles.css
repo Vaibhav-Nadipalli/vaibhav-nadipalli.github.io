@@ -114,19 +114,14 @@ header {
 
 /* Main content area */
 main {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 90px auto 20px;
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 section {
-    display: flex;
-    align-items: flex-start;
     padding: 20px 0;
     margin: 20px 0;
 }
@@ -135,13 +130,13 @@ section {
     font-size: 2em;
     margin-bottom: 10px;
     color: #999; /* Modern grey title color */
-    flex: 0 0 200px; /* Fixed width for titles */
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to section titles */
 }
 
+/* Paragraph styling */
 section p {
-    margin-left: 150px; /* Increase gap between titles and content */
-    flex: 1;
+    margin-top: 10px;
+    line-height: 1.6;
 }
 
 /* Media query for mobile */
@@ -189,19 +184,6 @@ section p {
 
     main {
         margin-top: 75px;
-    }
-
-    section {
-        flex-direction: column;
-    }
-
-    section p {
-        margin-left: 0;
-    }
-
-    .section-title {
-        flex: 0 0 auto; /* Adjust title width for mobile */
-        margin-bottom: 10px;
     }
 }
 
