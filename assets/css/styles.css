@@ -8,7 +8,7 @@
 /* Define @font-face to import the Skinz font */
 @font-face {
     font-family: 'Skinz';
-    src: url('Skinz-Regular.ttf') format('truetype');
+    src: url('path/to/Skinz-Regular.ttf') format('truetype');
     /* Adjust the path and filename as necessary */
 }
 
@@ -46,7 +46,7 @@ header {
     font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
     font-size: 1.3em;
     color: #000;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .nav-title a {
