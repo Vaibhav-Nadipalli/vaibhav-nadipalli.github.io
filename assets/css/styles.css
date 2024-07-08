@@ -7,7 +7,7 @@
 
 /* Basic body styling */
 body {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #282c3f; /* Dark navy background */
     color: #fff;
@@ -39,8 +39,6 @@ header {
     font-size: 1.3em;
     color: #000;
     margin: 5px 0;
-    padding: 0;
-    margin-left: 50px;
 }
 
 .nav-title a {
@@ -83,7 +81,7 @@ header {
     text-decoration: none;
     padding: 0px 15px;
     transition: color 0.3s ease;
-    font-family: 'Roboto', sans-serif; /* Apply Montserrat font to nav links */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to nav links */
 }
 
 .nav-links li a:hover {
@@ -127,11 +125,12 @@ section {
     margin: 20px 0;
 }
 
+/* Section title styling */
 .section-title {
     font-size: 2em;
     margin-bottom: 10px;
     color: #999; /* Modern grey title color */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to section titles */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to section titles */
 }
 
 /* Paragraph styling */
