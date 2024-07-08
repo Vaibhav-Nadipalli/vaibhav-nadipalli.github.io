@@ -114,13 +114,14 @@ header {
 
 /* Main content area */
 main {
-    max-width: 800px;
+    max-width: 75%; /* Increase the max-width to 75% */
     margin: 90px auto 20px;
     padding: 20px;
     background-color: #282c3f;
     color: #fff;
 }
 
+/* Section styling */
 section {
     padding: 20px 0;
     margin: 20px 0;
@@ -131,14 +132,12 @@ section {
     margin-bottom: 10px;
     color: #999; /* Modern grey title color */
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to section titles */
-    margin-left: 10%; /* Move section title to the left */
 }
 
 /* Paragraph styling */
 section p {
     margin-top: 10px;
     line-height: 1.6;
-    margin-left: 20%; /* Move content to the right */
 }
 
 /* Media query for mobile */
@@ -186,6 +185,7 @@ section p {
 
     main {
         margin-top: 75px;
+        max-width: 90%; /* Increase the max-width to 90% for mobile */
     }
 
     /* Reset left margin on mobile for better readability */
