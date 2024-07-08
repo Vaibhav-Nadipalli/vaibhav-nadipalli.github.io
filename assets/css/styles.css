@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Define @font-face to import the Skinz font */
+@font-face {
+    font-family: 'Skinz';
+    src: url('Skinz-Regular.ttf') format('truetype');
+    /* Adjust the path and filename as necessary */
+}
+
 /* Basic body styling */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -36,6 +43,7 @@ header {
 }
 
 .nav-title {
+    font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
     font-size: 1.3em;
     color: #000;
     margin: 5px 0;
@@ -131,7 +139,7 @@ section {
     font-weight: 400;
     margin-bottom: 10px;
     color: #98a6ad; /* Modern grey title color */
-    font-family: 'Montserrat',sans-serif; /* Apply Roboto font to section titles */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to section titles */
 }
 
 /* Paragraph styling */
