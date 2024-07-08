@@ -17,7 +17,7 @@ body {
 
 /* Navigation bar styling */
 header {
-    background-color: #fff; /* White background */
+    background-color: #f8f9fa; /* Light grey background for better contrast */
     color: #000; /* Black text */
     position: fixed;
     width: 100%;
@@ -97,7 +97,7 @@ header {
     top: 75px;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #f8f9fa;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
