@@ -83,7 +83,7 @@ header {
     text-decoration: none;
     padding: 0px 15px;
     transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to nav links */
+    font-family: 'Roboto', sans-serif; /* Apply Montserrat font to nav links */
 }
 
 .nav-links li a:hover {
