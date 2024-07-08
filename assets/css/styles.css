@@ -46,7 +46,7 @@ header {
     font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
     font-size: 1.3em;
     color: #000;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .nav-title a {
