@@ -160,6 +160,7 @@ section p {
 
     .nav-title {
         font-size: 1.1em;
+        font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
         margin-left: 10px;
     }
 
