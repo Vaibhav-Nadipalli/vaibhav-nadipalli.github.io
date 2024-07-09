@@ -25,7 +25,7 @@ header {
     z-index: 1000;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 70px;
+    height: 60px;
 }
 
 .nav-container {
@@ -167,7 +167,7 @@ section p {
 
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex; /* Show nav menu when checkbox is checked */
-        top: 75px;
+        top: 60px;
         left: 0;
         width: 100%;
     }
@@ -186,7 +186,7 @@ section p {
     }
 
     main {
-        margin-top: 75px;
+        margin-top: 60px;
         max-width: 90%; /* Increase the max-width to 90% for mobile */
     }
 
