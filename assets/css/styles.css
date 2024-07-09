@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Define @font-face to import the Skinz font */
-@font-face {
-    font-family: 'Skinz';
-    src: url('path/to/Skinz-Regular.ttf') format('truetype');
-    /* Adjust the path and filename as necessary */
 }
 
 /* Basic body styling */
@@ -43,10 +38,10 @@ header {
 }
 
 .nav-title {
-    font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
+    font-family: 'Montserrat', sans-serif; /* Apply Skinz font to nav title */
     font-size: 1.3em;
     color: #000;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .nav-title a {
@@ -160,7 +155,7 @@ section p {
 
     .nav-title {
         font-size: 1.1em;
-        font-family: 'Skinz', sans-serif; /* Apply Skinz font to nav title */
+        font-family: 'Montserrat', sans-serif;
         margin-left: 10px;
     }
 
