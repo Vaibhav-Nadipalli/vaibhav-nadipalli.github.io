@@ -26,6 +26,7 @@ header {
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: 75px;
+    padding-right: 50px;
 }
 
 .nav-container {
