@@ -1,6 +1,6 @@
 /* Reset default browser styles */
 * {
-    margin: 100;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -142,6 +142,32 @@ section p {
     line-height: 1.6;
 }
 
+/* Translucent box styling */
+.translucent-box {
+    display: block;
+    background: rgba(255, 255, 255, 0.1); /* Translucent background */
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.translucent-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.box-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box-content {
+    font-size: 1rem;
+}
+
 /* Media query for mobile */
 @media (max-width: 768px) {
     .nav-toggle-label {
@@ -188,23 +214,4 @@ section p {
 
     main {
         margin-top: 75px;
-        max-width: 90%; /* Increase the max-width to 90% for mobile */
-    }
-
-    /* Reset left margin on mobile for better readability */
-    .section-title,
-    section p {
-        margin-left: 0;
-    }
-}
-
-/* Hide hamburger on desktop */
-@media (min-width: 769px) {
-    .nav-toggle-label {
-        display: none; /* Hide on desktop */
-    }
-
-    .nav-menu {
-        display: flex; /* Always show menu on desktop */
-    }
-}
+        max-width: 90%; /* Increase the max-width to 90
