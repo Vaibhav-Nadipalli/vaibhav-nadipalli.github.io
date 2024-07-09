@@ -93,7 +93,7 @@ header {
 .nav-toggle:checked + .nav-toggle-label + .nav-menu {
     display: flex;
     position: absolute;
-    top: 75px;
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: #f8f9fa;
