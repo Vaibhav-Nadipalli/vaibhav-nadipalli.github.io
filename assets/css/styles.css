@@ -143,32 +143,6 @@ section p {
     line-height: 1.6;
 }
 
-/* Translucent box styling */
-.translucent-box {
-    display: block;
-    background: rgba(255, 255, 255, 0.1); /* Translucent background */
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.translucent-box:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-5px);
-}
-
-.box-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.box-content {
-    font-size: 1rem;
-}
-
 /* Media query for mobile */
 @media (max-width: 768px) {
     .nav-toggle-label {
@@ -186,7 +160,7 @@ section p {
     }
 
     .nav-toggle-label {
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .nav-menu {
