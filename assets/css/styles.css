@@ -147,6 +147,7 @@ section p {
 @media (max-width: 768px) {
     .nav-toggle-label {
         display: block; /* Show on mobile */
+        margin-right: 10px;
     }
 
     .nav-container {
