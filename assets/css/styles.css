@@ -41,7 +41,7 @@ header {
     font-size: 1.3em;
     color: #2B2B2B;
     margin: 10px 0;
-    margin-left:75px
+    margin-left: 75px;
 }
 
 .nav-title a {
@@ -56,9 +56,9 @@ header {
 .nav-toggle-label {
     font-size: 1.5em;
     cursor: pointer;
-    margin-left: auto;
     margin-top: 5px;
     display: none; /* Hide on desktop by default */
+    margin-left: auto; /* Push to the right on desktop */
 }
 
 .nav-menu {
@@ -147,7 +147,7 @@ section p {
 @media (max-width: 768px) {
     .nav-toggle-label {
         display: block; /* Show on mobile */
-        margin-right: 10px;
+        margin-right: 10px; /* Ensure it's aligned to the right */
     }
 
     .nav-container {
@@ -158,10 +158,6 @@ section p {
         font-size: 1.1em;
         font-family: 'Montserrat', sans-serif; 
         margin-left: 10px;
-    }
-
-    .nav-toggle-label {
-        margin-right: 10px;
     }
 
     .nav-menu {
@@ -190,4 +186,6 @@ section p {
 
     main {
         margin-top: 75px;
-        max-width: 90%; /* Increase the max-width to 90
+        max-width: 90%; /* Increase the max-width to 90% */
+    }
+}
